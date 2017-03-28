@@ -1,4 +1,4 @@
 ---
 layout: page
-title: 'Part 6: Event Handlers'
+title: 'Part 6: Editing the exported Twine HTML file directly'
 ---

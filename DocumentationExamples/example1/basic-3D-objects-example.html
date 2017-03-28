@@ -2,7 +2,7 @@
 <html class="init-no-js">
 <head>
 <meta charset="UTF-8" />
-<title>documentation-example-1</title>
+<title>Documentation example 1 (Basic 3D objects)</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <!--
 
@@ -1523,7 +1523,8 @@ html.debug-view .debug[data-name][data-type|="special"]:before {
 	<div id="hud"></div>
 	<ar-scene id="argon-aframe">
 	</ar-scene>
-	<div id="store-area" hidden><tw-storydata name="documentation-example-1" startnode="1" creator="Twine" creator-version="2.0.11" ifid="A7F1D790-C2E0-439A-AFAB-CB0A16E33BC6" format="OldFashioned" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">predisplay['#argon-passage-cleanup'] = function (task) {
+	<div id="store-area" hidden><tw-storydata name="Documentation example 1 (Basic 3D objects)" startnode="1" creator="Twine" creator-version="2.0.11" ifid="A7F1D790-C2E0-439A-AFAB-CB0A16E33BC6" format="OldFashioned" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">predisplay['#argon-passage-cleanup'] = function (task) {
 		$('#passage-entities').empty();
 };
 
@@ -1581,7 +1582,8 @@ Macro.add(['append3d', 'replace3d'], {
   			$targets.append(text);
 			}
 		}
-});</script><tw-passagedata pid="1" name="Start" tags="" position="501.5,277">This is a simple AR scene.  [[Click|second]] to go to the second scene.
+});
+</script><tw-passagedata pid="1" name="Start" tags="" position="501,277">This is a simple AR scene.  [[Click|second]] to go to the second scene.
 &lt;&lt;append3d sphere1&gt;&gt;
 &lt;a-sphere position=&quot;1 1.25 -5&quot; radius=&quot;1.25&quot; color=&quot;darkgreen&quot; &gt;&lt;/a-sphere&gt;
 &lt;&lt;/append3d&gt;&gt;</tw-passagedata>
@@ -1589,8 +1591,8 @@ Macro.add(['append3d', 'replace3d'], {
 &lt;&lt;append3d passage sphere2&gt;&gt;
 &lt;a-sphere position=&quot;-1 -1.25 -5&quot; radius=&quot;1.25&quot; color=&quot;orange&quot; &gt;&lt;/a-sphere&gt;
 &lt;&lt;/append3d&gt;&gt;</tw-passagedata>
-<tw-passagedata pid="3" name="StoryInit" tags="" position="376.5,223">&lt;&lt;append3d story box-and-sphere&gt;&gt;
-&lt;a-sphere position=&quot;0 1.25 -10&quot; radius=&quot;1.25&quot; color=&quot;#pink&quot; &gt;&lt;/a-sphere&gt;&lt;a-box id=&quot;bluebox&quot; position=&quot;-1 0.5 -10&quot; rotation=&quot;0 45 0&quot; width=&quot;1&quot; height=&quot;1&quot; depth=&quot;1&quot;  color=&quot;#blue&quot;&gt;&lt;/a-box&gt;
+<tw-passagedata pid="3" name="StoryInit" tags="" position="376,223">&lt;&lt;append3d story box-and-sphere&gt;&gt;
+&lt;a-sphere position=&quot;0 1.25 -10&quot; radius=&quot;1.25&quot; color=&quot;pink&quot; &gt;&lt;/a-sphere&gt;&lt;a-box id=&quot;bluebox&quot; position=&quot;-1 0.5 -10&quot; rotation=&quot;0 45 0&quot; width=&quot;1&quot; height=&quot;1&quot; depth=&quot;1&quot;  color=&quot;blue&quot;&gt;&lt;/a-box&gt;
 &lt;&lt;/append3d&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="4" name="third" tags="" position="704,397">This is a third AR scene.  [[Click|second]] to go to another one, or [[Click|Start]] to return to the first one.
 &lt;&lt;append3d sphere3&gt;&gt;
@@ -13978,9 +13980,9 @@ var Story = function () {
 
 					/*
      	Set the story title.
-     		TODO: Maybe `$storydata.attr('name')` should be used instead of `'documentation-example-1'`?
+     		TODO: Maybe `$storydata.attr('name')` should be used instead of `'Documentation example 1 (Basic 3D objects)'`?
      */
-					_storySetTitle(Util.unescape('documentation-example-1'));
+					_storySetTitle(Util.unescape('Documentation example 1 (Basic 3D objects)'));
 
 					/*
      	Set the default saves ID (must be done after the call to `_storySetTitle()`).

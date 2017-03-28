@@ -131,6 +131,8 @@ This is a third AR scene.  [[Click|second]] to go to another one, or [[Click|Sta
 
 '''
 
+Now let's export and play our experience! From the Twine dashboard, click the cog icon in the upper right corner of your AR project and click the 'Publish to File' button, which will create an html file that will hold your AR experience. To play this AR experience, simply find a way to store this file on the Internet, for example, through GitHub pages, and then navigate to the file using the Argon4 application.
+
 Congratulations, you now have the tools to create simple AR experiences with Twine! Next, we will take a look at CSS styling in Twine.
 
-// TODO: see if you should add in the CSS component or if you should make that into the next part.
+TODO: Make tutorial on publishing file on Internet
