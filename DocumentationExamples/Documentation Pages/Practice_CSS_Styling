@@ -1,0 +1,72 @@
+---
+layout: page
+title: 'Part 4: CSS Styling in Twine'
+---
+
+Note: For this tutorial, refer to [Basic 3D Objects](https://github.com/adachille/Argon-for-Twine-Documentation/blob/master/DocumentationExamples/example1/basic-3D-objects-example.html)
+
+You can add CSS styling to your Argon project. First, you need to make sure you are implementing Normalize.css. This ensures that your browser renders all elements more consistently. You should initialize this before proceeding. Here’s an example:
+
+‘’’html
+
+<script src="https://use.fontawesome.com/46b4065509.js"></script>
+<style id="style-normalize" type="text/css">/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+‘’’
+
+
+We need to set the default font family to sans-serif. Safari and Internet Explorer will try to change the font size as the user changes his/her device orientation. 
+
+
+‘’’html
+
+html {
+  font-family: sans-serif;  
+-ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+‘’’
+
+Remove the default margin.
+
+‘’’html
+
+body {
+  margin: 0;
+}
+
+‘’’
+
+When adding the initial html elements, define the summary block to be zero. Without this, Internet Explorer 11 does not correctly define the display for ‘main.’ 
+
+‘’’css
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+‘’’
+
+We need to normalize the vertical alignment of ‘progress’ in Firefox, Chrome, and Opera.  
+
+‘’’html
+
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+‘’’
